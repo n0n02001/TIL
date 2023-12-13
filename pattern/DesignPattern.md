@@ -38,3 +38,26 @@ DI(의존성) 주입을 통해 모듈간의 결합을 조금 더 느슨하게 �
 
 # Revealing Module Pattern
 노출모듈 패턴은 즉시 실행 함수(초기화 코드, 라이브러리 내 전역 변수 출돌 방지)를 통해 private, public 같은 접근 제어자를 만드는 패턴을 말합니다.
+
+
+# MVC Pattern
+MVC 패턴은 Model, View, Controller로 이루어진 디자인 패턴입니다.
+
+ - Model
+ 애플리케이션의 데이터인 DB, 상수, 변수 등을 뜻합니다.
+
+ - View
+ inputbox, checkbox, textarea 등 UI 요소를 나타냅니다.
+
+ - Controller
+ 모델과 뷰의 연결해주는 역할을 하며 이벤트 등 메인 로직을 담당합니다.
+
+
+# MVP 패턴
+MVC 패턴으로 부터 파생된 Controller가 Presenter로 변경된 패턴입니다.
+View와 Presenter는 1:1 관꼐로 MVC 패턴 보다 더 강한 결합을 지닌 디자인 패턴입니다.
+
+
+# MVVM 패턴
+MVC에서의 Controller가 View Model로 바뀐 패턴입니다.
+뷰모델은 뷰를 더 추상화한 계층이며 MVC 패턴과 달리 커맨드와 데이터 바인딩을 가지는 것이 특징입니다.
